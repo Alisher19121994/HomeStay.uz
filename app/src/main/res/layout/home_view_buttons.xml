@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activity_fon_color"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="170dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="270dp"
+            android:layout_height="170dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="home.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/home_view_1_id"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Rent"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="270dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="15dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="c_2.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/home_view_2_id"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Adds"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="270dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="15dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="payment.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/home_view_3_id"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Payment"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

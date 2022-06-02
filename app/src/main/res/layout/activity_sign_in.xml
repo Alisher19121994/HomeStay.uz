@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_fon_color"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:fontFamily="@font/billabong"
+            android:text="Home Stay.uz"
+            android:textSize="42sp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_text_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corners"
+            android:hint="Email"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_password_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:hint="Password"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/edit_text_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Sign In"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Don't you have an account?"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activity_fon_color"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/ed_image_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_2"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_corners" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Your advertisement bellow"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input1_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:startIconDrawable="@drawable/room">
+
+                <EditText
+                    android:id="@+id/ed_room_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center_vertical"
+                    android:hint="Room number "
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input2_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/input1_id"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:startIconDrawable="@drawable/money">
+
+                <EditText
+                    android:id="@+id/ed_price_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center_vertical"
+                    android:hint="Price "
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input3_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/input2_id"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:startIconDrawable="@drawable/address">
+
+                <EditText
+                    android:id="@+id/ed_address_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center_vertical"
+                    android:hint="Address "
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input4_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/input3_id"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:startIconDrawable="@drawable/name">
+
+                <EditText
+                    android:id="@+id/ed_name_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center_vertical"
+                    android:hint="Fullname "
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input5_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/input4_id"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:startIconDrawable="@drawable/phone">
+
+                <EditText
+                    android:id="@+id/ed_number_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center_vertical"
+                    android:hint="Phone number "
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/input5_id"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp">
+
+                <TextView
+
+                    android:id="@+id/ed_submit_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/rounded_corners"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

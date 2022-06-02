@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Page_4">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/page_4_lottie_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="12dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="water.json"
+                    app:lottie_loop="true" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="470dp">
+
+                <TextView
+                    android:id="@+id/page_4_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:padding="12dp"
+                    android:text="Text"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

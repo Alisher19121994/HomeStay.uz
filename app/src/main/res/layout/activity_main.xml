@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#61DCEC">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/billabong"
+                    android:paddingStart="35sp"
+                    android:text="Home Stay.uz"
+                    android:textColor="#9C27B0"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_imageview_id"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corners"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#37A9DD"
+                    android:fontFamily="@font/billabong"
+                    android:gravity="center_horizontal"
+                    android:text="Rents - Adds - Homes"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/activity_fon_color">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/Rents_id"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="55sp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/rounded_corners"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="home.json"
+                    app:lottie_loop="true" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/Adds_id"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_corners"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="c_2.json"
+                    app:lottie_loop="true" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/Homes_id"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@drawable/rounded_corners"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="payment.json"
+                    app:lottie_loop="true" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
